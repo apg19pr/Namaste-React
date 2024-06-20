@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div id="root">
+        <h1>Hello World! from HTML</h1>
+    </div>
+
+    <script>
+
+        let root = document.getElementById('root');
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World! from JS";
+        root.appendChild(heading)
+
+    </script>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- crossorigin => is for when the web page request to different domain
+     CORS => restricted resource is requested by web page from another domain out side the domain from which ithe resources is originated  -->
+
+    <script>
+        // // Creaing element core thing of react coming > from "React"
+        // const headingReact = React.createElement("h1", {}, "Hello World! from React ");
+
+        // // Creating root and rendering inside it > from "react DOM"
+        // const rootReact = ReactDOM.createRoot(document.getElementById('root'));
+
+        // rootReact.render(headingReact)
+    </script>
+    <script src="App.js"></script>
+    <!-- sequence matters   -->
+</body>
+
+
+</html>
